@@ -1,6 +1,6 @@
 import axios from "axios"; // It is used to make api calls.
 
-const API = axios.create({ baseURL: "https://moments-webapp.herokuapp.com/" });
+const API = axios.create({ baseURL: "http://localhost:5000" });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem("profile")) {

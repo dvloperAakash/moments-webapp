@@ -50,7 +50,7 @@ export const createPost = (post,history) => async (dispatch) => {
   try {
     dispatch({ type: START_LOADING });
     // making post api request at backend
-    const { data } = await api.createPost(post);
+    const { data } = await api.createPost(post); // making post api request to our backend sever.
     history.push(`/posts/${data._id}`)
     dispatch({ type: CREATE, payload: data });
     dispatch({ type: END_LOADING });

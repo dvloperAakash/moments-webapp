@@ -45,7 +45,7 @@ export default (state = { isLoading: true, posts: [] }, action) => {
         numberOfPages: action.payload.numberOfPages,
       }; // action.payload is actual posts.
     case CREATE:
-      return { ...state, posts: [...state.posts, action.payload] };
+      return { ...state, posts: [...state.posts, action.payload] };  // created post is it in action.payload.
     case DELETE:
       return {
         ...state,

@@ -32,7 +32,7 @@ const Form = ({ currentId, setCurrentId }) => {
         updatePost(currentId, { ...postData, name: user?.result?.name })
       );
     } else {
-      dispatch(createPost({ ...postData, name: user?.result?.name },history));
+      dispatch(createPost({ ...postData, name: user?.result?.name },history));  // once the action will dispatch,it will go to reducers.
       
     }
     clear();

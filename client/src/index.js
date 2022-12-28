@@ -8,7 +8,7 @@ import reducers from "./reducers";
 import App from "./App";
 import './index.css'
 
-const store = createStore(reducers, compose(applyMiddleware(thunk)));
+const store = createStore(reducers, compose(applyMiddleware(thunk))); 
 
 // Provider keeps the track of the store which is global state and that allow to access the store anywhere inside the store
 ReactDOM.render(

@@ -23,8 +23,9 @@ const Posts = ({ setCurrentId }) => {
         <Grid key={post._id} item xs={12} sm={12} md={6} lg={4}>
           <Post post={post} setCurrentId={setCurrentId} />
         </Grid>
-      ))}
+      ))}   
     </Grid>
+    // curly braces we are using indicates ,we are writing javascript logic.
   );
 };
 
