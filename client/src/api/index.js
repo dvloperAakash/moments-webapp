@@ -1,6 +1,6 @@
 import axios from "axios"; // It is used to make api calls.
 
-const API = axios.create({ baseURL: "http://localhost:5000" });
+const API = axios.create({ baseURL: "https://moments-r9v8.onrender.com" });
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem("profile")) {
